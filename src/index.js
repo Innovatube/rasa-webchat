@@ -46,6 +46,7 @@ const ConnectedWidget = forwardRef((props, ref) => {
       if (this.socket) {
         console.log('socket');
         console.log('data', data);
+        console.log('message', message);
         console.log(JSON.stringify(this.socket));
         this.socket.emit(message, data);
       }
